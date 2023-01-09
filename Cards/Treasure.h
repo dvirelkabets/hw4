@@ -7,6 +7,7 @@ class Treasure: public Card{
     public: 
         Treasure(); 
         void applyEncounter(Player& player) const override;
+        static std::shared_ptr<Treasure> getCard();
 
         /*
         * Here we are explicitly telling the compiler to use the default methods

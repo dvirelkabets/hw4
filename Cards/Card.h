@@ -2,7 +2,12 @@
 #define EX4_Card_H
 
 #include <string>
-#include "Player.h"
+#include "../Players/Player.h"
+#include "../Players/Warrior.h"
+#include "../Players/Ninja.h"
+#include "../Players/Healer.h"
+#include <iostream>
+#include <memory>
 
 /*
  *  CardType:
@@ -35,10 +40,10 @@ public:
     */
     virtual void applyEncounter(Player& player) const = 0;
 
-    /*
-    *Overloading output oerator 
-    */
-    virtual friend std::ostream& operator << (std::ostream& out, const Card& card);
+    //adding print helper function 
+    virtual void print(std::ostream& out) const;
+
+    friend std::ostream& operator << (std::ostream& out, const Card& card);
 
 
     /*

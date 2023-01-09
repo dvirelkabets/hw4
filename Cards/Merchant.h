@@ -20,6 +20,12 @@ class Merchant: public Card{
     */
     int getValidIntValue(const std::string& str) const;
 
+    /*
+    *This function gets input from the user until it recives the right type of input for Merchant card 
+    *@return - The value of the correct input 
+    */
+   int getValidInput() const;
+
     //private exceptions 
     class InvalidInput{};
 
@@ -28,6 +34,7 @@ class Merchant: public Card{
     public: 
         Merchant(); 
         void applyEncounter(Player& player) const override;
+        static std::shared_ptr<Merchant> getCard();
 
         /*
         * Here we are explicitly telling the compiler to use the default methods
