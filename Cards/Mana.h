@@ -16,5 +16,7 @@ class Mana: public Card{
         Mana& operator=(const Mana& other) = default;
 };
 
+static std::shared_ptr<Mana> MANA_CARD = std::make_shared<Mana>();
+
 
 #endif //EX4_Mana_H

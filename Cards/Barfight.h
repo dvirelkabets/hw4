@@ -16,6 +16,7 @@ class Barfight: public Card{
         ~Barfight() = default;
         Barfight& operator=(const Barfight& other) = default;
 };
+static std::shared_ptr<Barfight> BAR_FIGHT_CARD = std::make_shared<Barfight>();
 
 
 #endif // EX4_Barfight_H

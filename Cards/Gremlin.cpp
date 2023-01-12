@@ -20,5 +20,5 @@ void Gremlin::applyEncounter(Player& player) const{
 }
 
 std::shared_ptr<Card> Gremlin::getCard(){
-    return std::make_shared<Gremlin>();
+    return GREMLIN_CARD;
 }

@@ -21,5 +21,7 @@ class Gremlin: public Card{
     Gremlin& operator=(const Gremlin& other) = default;
 
 };
+static std::shared_ptr<Gremlin> GREMLIN_CARD = std::make_shared<Gremlin>();
+
 
 #endif

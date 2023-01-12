@@ -17,5 +17,6 @@ class Treasure: public Card{
         Treasure& operator=(const Treasure& other) = default;
 };
 
+static std::shared_ptr<Treasure> TREASURE_CARD = std::make_shared<Treasure>();
 
 #endif // EX4_Treasure_H

@@ -14,5 +14,5 @@ void Well::applyEncounter(Player& player) const{
 }
 
 std::shared_ptr<Card> Well::getCard(){
-    return std::make_shared<Well>();
+    return WELL_CARD;
 }

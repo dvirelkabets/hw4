@@ -17,5 +17,6 @@ class Well: public Card{
         Well& operator=(const Well& other) = default;
 };
 
+static std::shared_ptr<Well> WELL_CARD = std::make_shared<Well>();
 
 #endif // EX4_Well_H

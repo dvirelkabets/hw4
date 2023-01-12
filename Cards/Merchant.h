@@ -44,4 +44,6 @@ class Merchant: public Card{
         Merchant& operator=(const Merchant& other) = default;
 };
 
+static std::shared_ptr<Merchant> MERCHENT_CARD = std::make_shared<Merchant>();
+
 #endif // EX4_Merchant_H

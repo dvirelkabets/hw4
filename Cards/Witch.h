@@ -21,4 +21,6 @@ class Witch: public Card{
 
 };
 
+static std::shared_ptr<Witch> WITCH_CARD = std::make_shared<Witch>();
+
 #endif

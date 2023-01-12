@@ -9,5 +9,5 @@ void Treasure::applyEncounter(Player& player) const{
 }
 
 std::shared_ptr<Card> Treasure::getCard(){
-    return std::make_shared<Treasure>();
+    return TREASURE_CARD;
 }
