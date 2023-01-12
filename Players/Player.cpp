@@ -22,6 +22,10 @@ void Player::levelUp(){
     }
 }
 
+int Player::getCoins() const{
+    return m_coins;
+}
+
 int Player::getLevel() const{
     return m_level;
 }

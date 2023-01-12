@@ -36,6 +36,11 @@ public:
   void levelUp();
 
   /*
+  *@return - The amount of coins the player have
+  */
+  int getCoins() const;
+
+  /*
   *@return The player level
   */
  int getLevel() const;
