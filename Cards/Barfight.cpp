@@ -14,5 +14,5 @@ void Barfight::applyEncounter(Player& player) const{
 }
 
 std::shared_ptr<Barfight> Barfight::getCard(){
-    return std::make_shared<Barfight>;
+    return std::make_shared<Barfight>();
 }

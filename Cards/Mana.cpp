@@ -14,5 +14,5 @@ void Mana::applyEncounter(Player& player) const{
 }
 
 std::shared_ptr<Mana> Mana::getCard(){
-    return std::make_shared<Mana>;
+    return std::make_shared<Mana>();
 }

@@ -14,13 +14,6 @@
 #include <iostream>
 
 int main(){
-    Well m;
-    Merchant m2;
-    Ninja p = Ninja("maor");
-    p.heal(95);
-    std::cout << p << std::endl;
-    m.applyEncounter(p);
-    std::cout << p << std::endl;
-
-    return 0;
+    Dragon d; 
+    std::cout<<d<<std::endl;
 }
