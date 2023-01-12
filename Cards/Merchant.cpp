@@ -81,6 +81,6 @@ void Merchant::applyEncounter(Player& player) const{
   }
 }
 
-std::shared_ptr<Merchant> Merchant::getCard(){
-    return std::make_shared<Merchant>;
+std::shared_ptr<Card> Merchant::getCard(){
+    return std::make_shared<Merchant>();
 }

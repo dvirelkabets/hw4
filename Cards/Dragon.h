@@ -1,3 +1,5 @@
+#ifndef HW4_DRAGON
+#define HW4_DRAGON
 #include "Card.h"
 class Dragon: public Card{
         static const int FORCE = 25;
@@ -8,7 +10,7 @@ class Dragon: public Card{
         void applyEncounter(Player& player) const override;
         //helper print function 
         void print(std::ostream& out) const override;
-        static std::shared_ptr<Dragon> getCard();
+        static std::shared_ptr<Card> getCard();
 
     /*
      * Here we are explicitly telling the compiler to use the default methods
@@ -17,6 +19,8 @@ class Dragon: public Card{
     ~Dragon() = default;
     Dragon& operator=(const Dragon& other) = default;
 
-
-
 };
+
+static std::shared_ptr<Dragon> DRAGON_CARD = std::make_shared<Dragon>();
+
+#endif

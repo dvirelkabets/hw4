@@ -8,7 +8,7 @@ public:
     Warrior(const std::string name);
     int getAttackStrength() const override;
     std::string getJob() const override;
-    static std::shared_ptr<Warrior> getPlayer(const std::string name);
+    static std::shared_ptr<Player> getPlayer(const std::string name);
     
 };
 

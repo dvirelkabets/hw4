@@ -13,6 +13,6 @@ void Barfight::applyEncounter(Player& player) const{
     printBarfightMessage(isWarrior);
 }
 
-std::shared_ptr<Barfight> Barfight::getCard(){
-    return std::make_shared<Barfight>;
+std::shared_ptr<Card> Barfight::getCard(){
+    return std::make_shared<Barfight>();
 }

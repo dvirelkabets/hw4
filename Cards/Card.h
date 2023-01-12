@@ -43,9 +43,6 @@ public:
     //adding print helper function 
     virtual void print(std::ostream& out) const;
 
-    virtual std::shared_ptr<Card> getCard() = 0;
-
-
     friend std::ostream& operator << (std::ostream& out, const Card& card);
     /*
      * Here we are explicitly telling the compiler to use the default methods

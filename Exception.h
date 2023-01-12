@@ -14,11 +14,10 @@ class DeckFileNotFound : public std::exception{
 
 class DeckFileFormatError : public std::exception{
     int m_line;
-    std::string m_card;
     public:
-    explicit DeckFileFormatError(const int line, const std::string card): m_line(line), m_card(card){};
+    explicit DeckFileFormatError(const int line): m_line(line){};
        const char * what() const noexcept override {
-        std::string error = "Deck File Error: File format error in line " + std::to_string(m_line) + m_card;
+        std::string error = "Deck File Error: File format error in line " + std::to_string(m_line);
         const char * toSend = error.c_str();
         return toSend;
     }

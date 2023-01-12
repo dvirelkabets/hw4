@@ -13,6 +13,6 @@ void Well::applyEncounter(Player& player) const{
     printWellMessage(isNinja);
 }
 
-std::shared_ptr<Well> Well::getCard(){
-    return std::make_shared<Well>;
+std::shared_ptr<Card> Well::getCard(){
+    return std::make_shared<Well>();
 }

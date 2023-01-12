@@ -13,6 +13,6 @@ void Mana::applyEncounter(Player& player) const{
     printManaMessage(isHealer);
 }
 
-std::shared_ptr<Mana> Mana::getCard(){
-    return std::make_shared<Mana>;
+std::shared_ptr<Card> Mana::getCard(){
+    return std::make_shared<Mana>();
 }

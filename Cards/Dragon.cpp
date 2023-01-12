@@ -19,6 +19,6 @@ void Dragon::applyEncounter(Player& player) const{
     }
 }
 
-std::shared_ptr<Dragon> Dragon::getCard(){
-    return std::make_shared<Dragon>;
+std::shared_ptr<Card> Dragon::getCard(){
+    return DRAGON_CARD;
 }
