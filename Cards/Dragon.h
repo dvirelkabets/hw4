@@ -1,6 +1,8 @@
 #ifndef HW4_DRAGON
 #define HW4_DRAGON
 #include "Card.h"
+#include <memory>
+
 class Dragon: public Card{
         static const int FORCE = 25;
         static const int DAMAGE = Player::MAX_HP;
