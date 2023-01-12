@@ -13,7 +13,6 @@ protected:
     int m_coins;
     friend std::ostream& operator<<(std::ostream& os , const Player& playerToWrite); // defining printing for the class
 
-
 public:
     class InvalidName{};
     static const int START_FORCE = 5;
@@ -90,9 +89,9 @@ bool pay(int coinsToPay);
 */
 virtual int getAttackStrength() const;
 
-virtual std::string getJob() const;
-
 std::string getName() const;
+
+virtual std::string getJob() const;
 
 Player(const Player&)=default;
 virtual ~Player() = default;

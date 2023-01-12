@@ -6,6 +6,7 @@
 #include <istream>
 #include <vector>
 #include <deque>
+#include <map>
 #include <stack>
 #include <memory>
 #include "Players/Player.h"
@@ -34,14 +35,25 @@ Mtmchkin class:
 @param int m_index - the last card played.
 */
 
+static const std::map<std::string, std::shared_ptr<Card> (Card::*)()> cardMap;
+cardMap["Gremlin"]=&Gremlin::getCard();
+cardMap["Witch"]=&Witch::getCard();
+cardMap["Dragon"]=&Dragon::getCard();
+cardMap["Merchant"]=&Merchant::getCard();
+cardMap["Treasure"]=&Treasure::getCard();
+cardMap["Well"]=&Well::getCard();
+cardMap["Barfight"]=&Barfight::getCard();
+cardMap["Mana"]=&Mana::getCard();
+
 class Mtmchkin{
-std::vector<Player> m_players;
-std::vector<Card> m_cards;
-std::stack<Player> m_winnerStack;
-std::stack<Player> m_loserStack;
-int m_index;
-int m_roundCounter = 0;
- 
+
+    std::vector<std::shared_ptr<Player>> m_players;
+    std::vector<std::shared_ptr<Card>> m_cards;
+    std::stack<std::shared_ptr<Player>> m_winnerStack;
+    std::stack<std::shared_ptr<Player>> m_loserStack;
+    int m_index;
+    int m_roundCounter = 0;
+    
 /*
 readCard function - recive father class smart pointer to Card type, and string that holds the type of card
 try to create new card in given type.
