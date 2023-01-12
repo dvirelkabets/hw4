@@ -12,3 +12,7 @@ void Ninja::addCoins(int coinsToAdd){
 std::string Ninja::getJob() const{
     return "Ninja";
 }
+
+std::shared_ptr<Ninja> Ninja::getPlayer(const std::string name){
+    return std::make_shared<Ninja>(name);
+}

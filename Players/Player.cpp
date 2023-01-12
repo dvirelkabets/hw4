@@ -87,10 +87,6 @@ int Player::getAttackStrength() const{
     return (m_force +m_level);
 }
 
-std::string Player::getJob() const{
-    return "Hapash";
-}
-
 std::string Player::getName() const {
     return m_name;
 }

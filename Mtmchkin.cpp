@@ -1,11 +1,10 @@
 #include "Mtmchkin.h"
 
-void readCard(std::unique_ptr<Card>& card, const std::string read){
-    // switch (read){
-  
-    //     default:
-    //         throw Player::InvalidName();
-    //         break; }
+
+void readCard(std::shared_ptr<Card>& card, const std::string read){
+   if (m_cardMap.count(read)){
+    card = m_cardMap[read]();
+   }
 }
 
 void readFileToDeck (const std::string &fileName){
@@ -46,14 +45,8 @@ bool assiagnJob (std::shared_ptr<Player>& player, std::string jobName, std::stri
     if (!(isValidPlayerName(playerName))){
         return false;
     }
-    if (jobName == "Ninja"){
-        player = new Ninja(playerName);
-    }
-    else if (jobName == "Warrior"){
-        player = new Warrior(playerName);
-    }
-    else if (jobName== "Healer"){
-        player = new Healer(playerName);
+    if (m_playerMap.count(jobName)){
+        player = m_playerMap[jobName](playerName);
     }
    else{
         printInvalidClass();
@@ -100,8 +93,8 @@ int readPlayerNumber(){
 
 void Mtmchkin::playNextCard(std::shared_ptr<Player>& player){
     m_index = (m_index+1)%(m_cards.size());
-    Card currentCard = m_cards[m_index];
-    *currentCard.applyEncounter(&player);
+    std::shared_ptr<Card> currentCard = m_cards[m_index];
+    *currentCard.applyEncounter(&(*player)); // לעבור עם מאור
     
 }
 
@@ -114,7 +107,7 @@ set index to the size of the vector of cards - using it as cyclic group.
 */
 Mtmchkin::Mtmchkin (const std::string &fileName){
     // ---------------reading from file -------------------------
-    readFileToDeck(&fileName);
+    readFileToDeck(fileName);
     //-----------------reading players num-----------------------
     int playersNum = readPlayerNumber();
     //----------------reading players----------------------------
@@ -129,7 +122,7 @@ Mtmchkin::Mtmchkin (const std::string &fileName){
 
 void Mtmchkin::playRound(){
     printRoundStartMessage();
-    for (Player player : m_players){
+    for (std::shared_ptr<Player> player : m_players){
         if(*player.isKnockedOut() || *player.getLevel() == 10){
             continue;
         };

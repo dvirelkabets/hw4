@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstring>
 #include <string>
+#include <memory>
 
 class Player{
 protected:
@@ -96,7 +97,7 @@ virtual int getAttackStrength() const;
 
 std::string getName() const;
 
-virtual std::string getJob() const;
+virtual std::string getJob() const = 0;
 
 Player(const Player&)=default;
 virtual ~Player() = default;
