@@ -21,19 +21,32 @@ void Mtmchkin::readFileToDeck (const std::string &fileName){
     }
 }
 
-int Mtmchkin::readPlayerNumber() const{
-    int playersNum;
-    bool flag = true;
-    printStartGameMessage();
-    while(flag){
-        printEnterTeamSizeMessage();
-        std::cin >> playersNum;
-        if (std::cin.fail()||playersNum<2 || playersNum>6){
-            printInvalidTeamSize();
-            continue;
+bool isDigit(std::string& word){
+    for (char letter : word){
+        if (!(std::isdigit(letter))){
+            return false;
         }
-        return playersNum;
     }
+    return true;
+}
+
+
+int Mtmchkin::readPlayerNumber() const{
+    std::string numberInput;
+    int playersNum;
+    printStartGameMessage();
+    while(true){
+        printEnterTeamSizeMessage();
+        std::cin >> numberInput;
+        if (isDigit(numberInput)){
+            playersNum = std::stoi(numberInput);
+            if (playersNum>=2 && playersNum<=6){
+                break;
+            }
+        }
+        printInvalidTeamSize();
+    }
+    return playersNum;
 }
 
 bool Mtmchkin::isValidPlayerName (std::string player){
@@ -49,6 +62,7 @@ bool Mtmchkin::isValidPlayerName (std::string player){
 
 bool Mtmchkin::assignJob (std::shared_ptr<Player>& player, std::string jobName, std::string playerName){
     if (!(isValidPlayerName(playerName))){
+        std::cout << "maybe here" << std::endl;
         return false;
     }
     if (m_playerMap.count(jobName)){
@@ -66,16 +80,17 @@ void Mtmchkin::readPlayer(std::shared_ptr<Player>& player){
     std::string playerName;
     std::string jobName;
     bool flag = true;
-    int pos;
+    int position;
+    std::cin >>input;
     while (flag){
-        std::cin >> input;
-        pos = input.find(" ");
-        if (pos<=0){
+        std::getline(std::cin,input);
+        position = input.find(" ");
+        if (position<=0){
             printInvalidName();
             continue;
         }
-        playerName = input.substr(0,pos);
-        jobName = input.substr(pos+1);
+        playerName = input.substr(0,position);
+        jobName = input.substr(position+1);
         if(assignJob(player, jobName, playerName)){
             flag = false;
         }
@@ -140,7 +155,7 @@ void Mtmchkin::printLeaderBoard() const{
     for (std::shared_ptr<Player> player : m_winnerVector){
         leaderBoard.push_back(player);
     }
-    for (std::vector<std::shared_ptr<Player>>::reverse_iterator it = m_loserVector.rbegin(); it != m_loserVector.rend(); ++it){
+    for (std::vector<std::shared_ptr<Player>>::const_reverse_iterator it = m_loserVector.crbegin(); it != m_loserVector.crend(); ++it){
         leaderBoard.push_back(*it);
     }
     int i = 1;
