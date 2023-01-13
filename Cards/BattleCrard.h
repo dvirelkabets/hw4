@@ -1,5 +1,6 @@
+#ifndef EX4_BATTLE_CARD
+#define EX4_BATTLE_CARD
 #include "Card.h"
-#include "Dragon.h"
 class BattleCard: public Card{     
     protected: 
         virtual int getForce() const = 0; 
@@ -7,10 +8,10 @@ class BattleCard: public Card{
         virtual int getCoins() const = 0; 
     
     public:
-        BattleCard();
+        BattleCard(std::string name);
         virtual void applyEncounter(Player& player) const;
         //helper print function 
-        void print(std::ostream& out) override;
+        void print(std::ostream& out) const override;
         static std::shared_ptr<BattleCard> getCard();
 
     /*
@@ -23,3 +24,5 @@ class BattleCard: public Card{
 
 
 };
+
+#endif

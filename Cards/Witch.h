@@ -1,15 +1,12 @@
 #ifndef HW4_WITCH
 #define HW4_WITCH
-#include "Card.h"
-class Witch: public Card{
-        static const int FORCE = 11;
-        static const int DAMAGE = 10;
-        static const int COINS = 2;
+#include "BattleCrard.h"
+class Witch: public BattleCard{
+        int getForce() const override; 
+        int getDamage() const override; 
+        int getCoins() const override;
     public:
         Witch();
-        void applyEncounter(Player& player) const override;
-        //helper print function 
-        void print(std::ostream& out) const override;
         static std::shared_ptr<Card> getCard();
 
     /*
@@ -21,6 +18,6 @@ class Witch: public Card{
 
 };
 
-static std::shared_ptr<Witch> WITCH_CARD = std::make_shared<Witch>();
+static std::shared_ptr<Witch> Witch_CARD = std::make_shared<Witch>();
 
 #endif

@@ -11,9 +11,16 @@
 #include "Players/Ninja.h"
 #include "Players/Healer.h"
 #include "Players/Warrior.h"
+#include "Cards/BattleCrard.h"
 #include <iostream>
 
 int main(){
-    Dragon d; 
-    std::cout<<d<<std::endl;
+    Warrior* n = new Warrior("maor");
+    std::cout << *n << std::endl;
+    Card* w = new Well();
+    Card* t = new Treasure();
+    w->applyEncounter(*n);
+    std::cout << *n << std::endl;
+    t->applyEncounter(*n);
+    std::cout << *n << std::endl;
 }

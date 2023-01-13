@@ -22,7 +22,7 @@ class Card {
 protected:
     std::string m_name;
     //adding print helper function 
-    virtual void print(std::ostream& out);
+    virtual void print(std::ostream& out) const;
 public:
     /*
      * C'tor of Card class

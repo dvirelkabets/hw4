@@ -1,22 +1,18 @@
 #include "Dragon.h"
 #include "../utilities.h"
 
-Dragon::Dragon(): Card("Dragon"){}
+Dragon::Dragon(): BattleCard("Dragon"){}
 
-void Dragon::print(std::ostream& out) const{
-    printMonsterDetails(out, FORCE, DAMAGE, COINS, true);
+int Dragon::getForce() const{
+    return 25;
 }
 
-void Dragon::applyEncounter(Player& player) const{
-    if(player.getAttackStrength() >= FORCE){
-        player.levelUp();
-        player.addCoins(COINS);
-        printWinBattle(player.getName(), "Dragon");
-    }
-    else{
-        player.damage(DAMAGE);
-        printLossBattle(player.getName(), "Dragon");
-    }
+int Dragon::getDamage() const{
+    return Player::MAX_HP;
+}
+
+int Dragon::getCoins() const{
+    return 1000;
 }
 
 std::shared_ptr<Card> Dragon::getCard(){
