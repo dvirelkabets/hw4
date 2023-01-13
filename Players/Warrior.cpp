@@ -11,6 +11,6 @@ std::string Warrior::getJob() const{
     return "Warrior";
 }
 
-std::shared_ptr<Warrior> Warrior::getPlayer(const std::string name){
+std::shared_ptr<Player> Warrior::getPlayer(const std::string name){
     return std::make_shared<Warrior>(name);
 }

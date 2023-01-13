@@ -8,6 +8,6 @@ void Treasure::applyEncounter(Player& player) const{
     printTreasureMessage();
 }
 
-std::shared_ptr<Treasure> Treasure::getCard(){
-    return std::make_shared<Treasure>();
+std::shared_ptr<Card> Treasure::getCard(){
+    return TREASURE_CARD;
 }

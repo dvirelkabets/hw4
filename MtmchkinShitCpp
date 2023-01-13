@@ -1,13 +1,12 @@
 #include "Mtmchkin.h"
 
-
-void readCard(std::shared_ptr<Card>& card, const std::string read){
+void Mtmchkin::readCard(std::shared_ptr<Card>& card, const std::string read){
    if (m_cardMap.count(read)){
     card = m_cardMap[read]();
    }
 }
 
-void readFileToDeck (const std::string &fileName){
+void Mtmchkin::readFileToDeck (const std::string &fileName){
     std::ifstream file (fileName);
     if (!file){
         throw DeckFileNotFound();
@@ -17,7 +16,7 @@ void readFileToDeck (const std::string &fileName){
     while (std::getline(file,read)){
         try{
             std::shared_ptr<Card> card;
-            readCard(&card, read);
+            readCard(card, read);
             m_cards.push_back(card);
             fileLine++;
         }
@@ -30,9 +29,9 @@ void readFileToDeck (const std::string &fileName){
     }
 }
 
-bool isValidPlayerName (std::string player){
+bool Mtmchkin::isValidPlayerName (std::string player){
     try{
-        Player tmpPlayer(player);
+        Ninja tmpPlayer(player);
         return true;
     }
     catch(...){
@@ -41,7 +40,7 @@ bool isValidPlayerName (std::string player){
     }  
 }
 
-bool assiagnJob (std::shared_ptr<Player>& player, std::string jobName, std::string playerName){
+bool Mtmchkin::assiagnJob (std::shared_ptr<Player>& player, std::string jobName, std::string playerName){
     if (!(isValidPlayerName(playerName))){
         return false;
     }
@@ -55,7 +54,7 @@ bool assiagnJob (std::shared_ptr<Player>& player, std::string jobName, std::stri
     return true;
 }
 
-void readPlayer (std::shared_ptr<Player>& player){
+void Mtmchkin::readPlayer(std::shared_ptr<Player>& player){
     std::string input;
     std::string playerName;
     std::string jobName;
@@ -70,13 +69,13 @@ void readPlayer (std::shared_ptr<Player>& player){
         }
         playerName = input.substr(0,pos);
         jobName = input.substr(pos+1);
-        if(assiagnJob(&player, jobName, playerName)){
+        if(assiagnJob(player, jobName, playerName)){
             flag = false;
         }
     }
 }
 
-int readPlayerNumber(){
+int Mtmchkin::readPlayerNumber(){
     int playersNum;
     bool flag = true;
     printStartGameMessage();
@@ -94,7 +93,7 @@ int readPlayerNumber(){
 void Mtmchkin::playNextCard(std::shared_ptr<Player>& player){
     m_index = (m_index+1)%(m_cards.size());
     std::shared_ptr<Card> currentCard = m_cards[m_index];
-    *currentCard.applyEncounter(&(*player)); // לעבור עם מאור
+    currentCard->applyEncounter(*player); // לעבור עם מאור
     
 }
 
@@ -114,25 +113,25 @@ Mtmchkin::Mtmchkin (const std::string &fileName){
     for (int i=0; i<playersNum;++i){
         printInsertPlayerMessage();
         std::shared_ptr<Player> player;
-        readPlayer(&player);
+        readPlayer(player);
         m_players.push_back(player);
     }
     m_index=m_cards.size();
 }
 
 void Mtmchkin::playRound(){
-    printRoundStartMessage();
+    printRoundStartMessage(m_roundCounter);
     for (std::shared_ptr<Player> player : m_players){
-        if(*player.isKnockedOut() || *player.getLevel() == 10){
+        if(player->isKnockedOut() || player->getLevel() == 10){
             continue;
-        };
-        printTurnStartMessage(*player.getName());
-        playNextCard(&playerPtr)
-        if (*player.getLevel() == 10){
-            m_winnerStack.push(player);
         }
-        if (*player.isKnockedOut()){
-            m_loserStack.push(player);
+        printTurnStartMessage(player->getName());
+        playNextCard(player);
+        if (player->getLevel() == 10){
+            m_winnerVector.push_back(player);
+        }
+        if (player->isKnockedOut()){
+            m_loserVector.push_back(player);
         }
     }
     m_roundCounter++;
@@ -141,32 +140,32 @@ void Mtmchkin::playRound(){
     }
 }
 
-void printLeaderBoard() const{
-    if (m_winnerStack.empty() && m_loserStack.empty()){
+void Mtmchkin::printLeaderBoard() const{
+    if (m_winnerVector.empty() && m_loserVector.empty()){
         return;
     }
-    std::deque<std::shared_ptr<Player>> leaderBoard;
-    printLeaderboardStartMessage();
-    for (std::shared_ptr<Player> player : m_winnerStack){
-        leaderBoard.push_front(*player);
+    std::vector<std::shared_ptr<Player>> leaderBoard;
+    printLeaderBoardStartMessage();
+    for (std::shared_ptr<Player> player : m_winnerVector){
+        leaderBoard.push_back(player);
     }
-    for (std::shared_ptr<Player> player : m_loserStack){
-        leaderBoard.push_back(*player);
+    for (std::vector<std::shared_ptr<Player>>::reverse_iterator it = m_loserVector.rbegin(); it != m_loserVector.rend(); ++it){
+        leaderBoard.push_back(*it);
     }
     int i = 1;
     for (std::shared_ptr<Player> player : leaderBoard){
-        printPlayerLeaderboard(i, &(*player));
+        printPlayerLeaderBoard(i, *player);
         i++;
     }
 }
 
-bool isGameOver() const{
-    if (m_players.size() == m_loserStack.size() + m_winnerStack.size()){
+bool Mtmchkin::isGameOver() const{
+    if (m_players.size() == m_loserVector.size() + m_winnerVector.size()){
         return true;
     }
     return false;
 }
 
- int getNumberOfRounds() const{
+ int Mtmchkin::getNumberOfRounds() const{
     return m_roundCounter;
  }

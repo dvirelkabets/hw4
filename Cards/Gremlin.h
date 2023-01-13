@@ -1,3 +1,5 @@
+#ifndef HW4_GREMLIN
+#define HW4_GREMLIN
 #include "Card.h"
 class Gremlin: public Card{
         static const int FORCE = 5;
@@ -8,7 +10,7 @@ class Gremlin: public Card{
         void applyEncounter(Player& player) const override;
         //helper print function 
         void print(std::ostream& out) const override;
-        static std::shared_ptr<Gremlin> getCard();
+        static std::shared_ptr<Card> getCard();
 
 
     /*
@@ -18,6 +20,8 @@ class Gremlin: public Card{
     virtual ~Gremlin() = default;
     Gremlin& operator=(const Gremlin& other) = default;
 
-
-
 };
+static std::shared_ptr<Gremlin> GREMLIN_CARD = std::make_shared<Gremlin>();
+
+
+#endif

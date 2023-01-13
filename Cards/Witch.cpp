@@ -19,7 +19,7 @@ void Witch::applyEncounter(Player& player) const{
     }
 }
 
-std::shared_ptr<Witch> Witch::getCard(){
-    return std::make_shared<Witch>();
+std::shared_ptr<Card> Witch::getCard(){
+    return WITCH_CARD;
 }
 

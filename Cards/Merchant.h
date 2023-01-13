@@ -34,7 +34,7 @@ class Merchant: public Card{
     public: 
         Merchant(); 
         void applyEncounter(Player& player) const override;
-        static std::shared_ptr<Merchant> getCard();
+        static std::shared_ptr<Card> getCard();
 
         /*
         * Here we are explicitly telling the compiler to use the default methods
@@ -43,5 +43,7 @@ class Merchant: public Card{
         ~Merchant() = default;
         Merchant& operator=(const Merchant& other) = default;
 };
+
+static std::shared_ptr<Merchant> MERCHENT_CARD = std::make_shared<Merchant>();
 
 #endif // EX4_Merchant_H

@@ -6,7 +6,7 @@ class Mana: public Card{
     public: 
         Mana();
         void applyEncounter(Player& player) const override; 
-        static std::shared_ptr<Mana> getCard();
+        static std::shared_ptr<Card> getCard();
         /*
         * Here we are explicitly telling the compiler to use the default methods
         */
@@ -14,6 +14,8 @@ class Mana: public Card{
         ~Mana() = default;
         Mana& operator=(const Mana& other) = default;
 };
+
+static std::shared_ptr<Mana> MANA_CARD = std::make_shared<Mana>();
 
 
 #endif //EX4_Mana_H
