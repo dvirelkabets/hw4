@@ -17,6 +17,6 @@ std::string Healer::getJob() const{
     return "Healer";
 }
 
-std::shared_ptr<Player> Healer::getPlayer(const std::string name){
+std::shared_ptr<Player> Healer::getPlayer(const std::string name) {
     return std::make_shared<Healer>(name);
 }

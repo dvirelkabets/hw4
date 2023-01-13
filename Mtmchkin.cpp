@@ -1,11 +1,5 @@
 #include "Mtmchkin.h"
 
-void Mtmchkin::readCard(std::shared_ptr<Card>& card, const std::string read){
-   if (m_cardMap.count(read)){
-    card = m_cardMap[read]();
-   }
-}
-
 void Mtmchkin::readFileToDeck (const std::string &fileName){
     std::ifstream file (fileName);
     if (!file){
@@ -14,18 +8,31 @@ void Mtmchkin::readFileToDeck (const std::string &fileName){
     std::string read;
     int fileLine = 1;
     while (std::getline(file,read)){
-        try{
-            std::shared_ptr<Card> card;
-            readCard(card, read);
-            m_cards.push_back(card);
-            fileLine++;
+        if (m_cardMap.count(read)){
+            m_cards.push_back(m_cardMap[read]());
         }
-        catch(...){
-            throw DeckFileFormatError(fileLine,read);
+        else{
+            throw DeckFileFormatError(fileLine);
         }
+        fileLine++;
     }
     if (fileLine<=4){
         throw DeckFileInvalidSize();
+    }
+}
+
+int Mtmchkin::readPlayerNumber() const{
+    int playersNum;
+    bool flag = true;
+    printStartGameMessage();
+    while(flag){
+        printEnterTeamSizeMessage();
+        std::cin >> playersNum;
+        if (std::cin.fail()||playersNum<2 || playersNum>6){
+            printInvalidTeamSize();
+            continue;
+        }
+        return playersNum;
     }
 }
 
@@ -37,17 +44,17 @@ bool Mtmchkin::isValidPlayerName (std::string player){
     catch(...){
         printInvalidName();
         return false;
-    }  
+    }
 }
 
-bool Mtmchkin::assiagnJob (std::shared_ptr<Player>& player, std::string jobName, std::string playerName){
+bool Mtmchkin::assignJob (std::shared_ptr<Player>& player, std::string jobName, std::string playerName){
     if (!(isValidPlayerName(playerName))){
         return false;
     }
     if (m_playerMap.count(jobName)){
         player = m_playerMap[jobName](playerName);
     }
-   else{
+    else{
         printInvalidClass();
         return false;
     }
@@ -69,39 +76,23 @@ void Mtmchkin::readPlayer(std::shared_ptr<Player>& player){
         }
         playerName = input.substr(0,pos);
         jobName = input.substr(pos+1);
-        if(assiagnJob(player, jobName, playerName)){
+        if(assignJob(player, jobName, playerName)){
             flag = false;
         }
-    }
-}
-
-int Mtmchkin::readPlayerNumber(){
-    int playersNum;
-    bool flag = true;
-    printStartGameMessage();
-    while(flag){
-        printEnterTeamSizeMessage();
-        std::cin >> playersNum;
-        if (std::cin.fail()||playersNum<2 || playersNum>6){
-            printInvalidTeamSize();
-            continue;
-        }
-        return playersNum;
     }
 }
 
 void Mtmchkin::playNextCard(std::shared_ptr<Player>& player){
     m_index = (m_index+1)%(m_cards.size());
     std::shared_ptr<Card> currentCard = m_cards[m_index];
-    currentCard->applyEncounter(*player); // לעבור עם מאור
-    
+    currentCard->applyEncounter(*player);
 }
 
 /*
 Mtmchkin c'tor - 
 read the cards from the file and if there is a problem with one of the cards it throws exception.
 after that read the players number
-for every player read the name and class and makeing sure everything is legel.
+for every player read the name and class and making sure everything is legal.
 set index to the size of the vector of cards - using it as cyclic group.
 */
 Mtmchkin::Mtmchkin (const std::string &fileName){
@@ -121,8 +112,8 @@ Mtmchkin::Mtmchkin (const std::string &fileName){
 
 void Mtmchkin::playRound(){
     printRoundStartMessage(m_roundCounter);
-    for (std::shared_ptr<Player> player : m_players){
-        if(player->isKnockedOut() || player->getLevel() == 10){
+    for (std::shared_ptr<Player> player : m_players) {
+        if (player->isKnockedOut() || player->getLevel() == 10) {
             continue;
         }
         printTurnStartMessage(player->getName());
