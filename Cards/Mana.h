@@ -1,7 +1,6 @@
 #ifndef EX4_Mana_H
 #define EX4_Mana_H
-#include "Card.h" 
-#include <string> 
+#include "Card.h"
 class Mana: public Card{
     static const int HP_TO_ADD = 10; 
     public: 

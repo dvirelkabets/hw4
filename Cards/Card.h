@@ -19,7 +19,10 @@
 */
 
 class Card {
-std::string m_name;
+protected:
+    std::string m_name;
+    //adding print helper function 
+    virtual void print(std::ostream& out) const;
 public:
     /*
      * C'tor of Card class
@@ -39,9 +42,6 @@ public:
      *      void
     */
     virtual void applyEncounter(Player& player) const = 0;
-
-    //adding print helper function 
-    virtual void print(std::ostream& out) const;
 
     friend std::ostream& operator << (std::ostream& out, const Card& card);
     /*

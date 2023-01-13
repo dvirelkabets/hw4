@@ -1,24 +1,20 @@
 #include "Gremlin.h"
 #include "../utilities.h"
 
-Gremlin::Gremlin(): Card("Gremlin"){}
+Gremlin::Gremlin(): BattleCard("Gremlin"){}
 
-void Gremlin::print(std::ostream& out) const{
-    printMonsterDetails(out, FORCE, DAMAGE, COINS);
+int Gremlin::getForce() const{
+    return 5;
 }
 
-void Gremlin::applyEncounter(Player& player) const{
-    if(player.getAttackStrength() >= FORCE){
-        player.levelUp();
-        player.addCoins(COINS);
-        printWinBattle(player.getName(), "Gremlin");
-    }
-    else{
-        player.damage(DAMAGE);
-        printLossBattle(player.getName(), "Gremlin");
-    }
+int Gremlin::getDamage() const{
+    return 10;
+}
+
+int Gremlin::getCoins() const{
+    return 2;
 }
 
 std::shared_ptr<Card> Gremlin::getCard(){
-    return GREMLIN_CARD;
+    return Gremlin_CARD;
 }

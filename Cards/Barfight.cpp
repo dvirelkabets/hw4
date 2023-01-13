@@ -1,6 +1,5 @@
 #include "Barfight.h"
 #include "../utilities.h"
-#include "string" 
 
 Barfight::Barfight(): Card("Barfight"){}
 
