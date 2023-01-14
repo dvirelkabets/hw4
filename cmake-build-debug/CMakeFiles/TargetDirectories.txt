@@ -1,3 +1,0 @@
-/home/dvirelkabets/hw4/cmake-build-debug/CMakeFiles/hw4.dir
-/home/dvirelkabets/hw4/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/dvirelkabets/hw4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
