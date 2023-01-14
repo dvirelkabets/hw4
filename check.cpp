@@ -8,10 +8,14 @@ void foo(){
 
 int main() {
   try{
-    Mtmchkin goodGame("/home/dvirelkabets/hw4/cards.txt");
+    Mtmchkin goodGame("C:\\Users\\alkdv\\CLionProjects\\untitled\\hw4\\badCards.txt");
+    while (!(goodGame.isGameOver())){
+        goodGame.playRound();
+        goodGame.printLeaderBoard();
+    }
   }
   catch(const std::exception& e){
-    std::cout <<"somthing happend"<< std::endl;
+    std::cout <<e.what()<< std::endl;
   }
 
     return 0;

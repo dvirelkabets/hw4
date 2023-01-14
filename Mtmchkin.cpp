@@ -91,9 +91,8 @@ void Mtmchkin::readPlayer(std::shared_ptr<Player>& player){
     std::string jobName;
     bool flag = true;
     int position;
-    std::cin >> input;
     while (flag){
-        std::getline(std::cin,input);
+        std::getline(std::cin, input);
         position = spacePosition(input);
         if (position<=0){
             std::cout << "maybe here " << position << input << std::endl;
@@ -126,6 +125,7 @@ Mtmchkin::Mtmchkin (const std::string &fileName){
     readFileToDeck(fileName);
     //-----------------reading players num-----------------------
     int playersNum = readPlayerNumber();
+    std::cin.ignore(20, '\n');
     //----------------reading players----------------------------
     for (int i=0; i<playersNum;++i){
         printInsertPlayerMessage();

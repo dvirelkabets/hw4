@@ -10,6 +10,7 @@
 #include <map>
 #include <stack>
 #include <memory>
+#include <limits>
 #include "Players/Player.h"
 #include "Cards/Card.h"
 #include "Cards/Witch.h"
