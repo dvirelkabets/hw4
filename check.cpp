@@ -8,7 +8,7 @@ void foo(){
 
 int main() {
   try{
-    Mtmchkin goodGame("cards.txt");
+    Mtmchkin goodGame("/home/dvirelkabets/hw4/cards.txt");
   }
   catch(const std::exception& e){
     std::cout <<"somthing happend"<< std::endl;

@@ -62,7 +62,6 @@ bool Mtmchkin::isValidPlayerName (std::string player){
 
 bool Mtmchkin::assignJob (std::shared_ptr<Player>& player, std::string jobName, std::string playerName){
     if (!(isValidPlayerName(playerName))){
-        std::cout << "maybe here" << std::endl;
         return false;
     }
     if (m_playerMap.count(jobName)){
@@ -75,17 +74,29 @@ bool Mtmchkin::assignJob (std::shared_ptr<Player>& player, std::string jobName, 
     return true;
 }
 
+int spacePosition(std::string& word){
+    int count = 0;
+    for (char letter : word){
+        if (letter == ' '){
+            return count;
+        }
+        count++;
+    }
+    return -1;
+}
+
 void Mtmchkin::readPlayer(std::shared_ptr<Player>& player){
     std::string input;
     std::string playerName;
     std::string jobName;
     bool flag = true;
     int position;
-    std::cin >>input;
+    std::cin >> input;
     while (flag){
         std::getline(std::cin,input);
-        position = input.find(" ");
+        position = spacePosition(input);
         if (position<=0){
+            std::cout << "maybe here " << position << input << std::endl;
             printInvalidName();
             continue;
         }

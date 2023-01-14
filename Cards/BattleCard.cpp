@@ -1,4 +1,4 @@
-#include "BattleCrard.h"
+#include "BattleCard.h"
 #include"../utilities.h"
 #include "Dragon.h"
 
