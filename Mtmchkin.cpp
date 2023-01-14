@@ -85,7 +85,7 @@ void Mtmchkin::readPlayer(std::shared_ptr<Player>& player){
     while (flag){
         std::getline(std::cin,input);
         position = input.find(" ");
-        if (position<=0){
+        if (position < 0){
             printInvalidName();
             continue;
         }
