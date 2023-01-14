@@ -11,7 +11,7 @@
 #include "Players/Ninja.h"
 #include "Players/Healer.h"
 #include "Players/Warrior.h"
-#include "Cards/BattleCrard.h"
+#include "Cards/BattleCard.h"
 #include <iostream>
 
 int main(){

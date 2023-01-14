@@ -11,35 +11,30 @@ int Merchant::getValidIntValue(const std::string& str) const{
       throw InvalidInput();
     }
   }
-
   int num = std::stoi(str);
   return num;
 }
 
 int Merchant::getValidInput() const{
-    int PlayerChoice; 
+    int playerChoice;
     std::string input;
     while(true){
       getline(std::cin, input);
       try{
-        PlayerChoice = getValidIntValue(input);
+        playerChoice = getValidIntValue(input);
       }
-      catch(InvalidInput e){
+      catch(...){
         printInvalidInput();
         continue;
       }
-
-      switch (PlayerChoice)
+      switch (playerChoice)
       {
       case INPUT_TO_DO_NOTHING:
-        return PlayerChoice;
-
+        return playerChoice;
       case INPUT_TO_BUY_LIFE:
-        return PlayerChoice;
-
+        return playerChoice;
       case INPUT_TO_BUY_FORCE:
-        return PlayerChoice;
-
+        return playerChoice;
       default:
         printInvalidInput();
         break;
@@ -54,7 +49,6 @@ void Merchant::applyEncounter(Player& player) const{
     {
     case INPUT_TO_DO_NOTHING:
       break;
-    
     case INPUT_TO_BUY_LIFE:
       {
         if(player.pay(PRICE_FOR__LIFE)){
@@ -62,11 +56,10 @@ void Merchant::applyEncounter(Player& player) const{
           printMerchantSummary(std::cout, player.getName(), INPUT_TO_BUY_LIFE, PRICE_FOR__LIFE);
         }
         else{
-          printMerchantInsufficientCoins(std::cout);
+          printMerchantInsufficientCoins(std::cout);//need to add somthing
         }
       }
       break;
-
     case INPUT_TO_BUY_FORCE:
     {
       if(player.pay(PRICE_FOR_FORCE)){

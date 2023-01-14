@@ -1,6 +1,6 @@
 #ifndef HW4_DRAGON
 #define HW4_DRAGON
-#include "BattleCrard.h"
+#include "BattleCard.h"
 class Dragon: public BattleCard{
         int getForce() const override; 
         int getDamage() const override; 

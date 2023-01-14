@@ -1,8 +1,8 @@
 Dragon
-Barfiht
+Barfight
 Gremlin
 Mana
-Merchant
+Marchant
 Treasure
 Well
 Witch

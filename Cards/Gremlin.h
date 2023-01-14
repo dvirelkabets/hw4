@@ -1,6 +1,6 @@
 #ifndef HW4_GREMLIN
 #define HW4_GREMLIN
-#include "BattleCrard.h"
+#include "BattleCard.h"
 class Gremlin: public BattleCard{
         int getForce() const override; 
         int getDamage() const override; 

@@ -1,6 +1,6 @@
 #ifndef HW4_WITCH
 #define HW4_WITCH
-#include "BattleCrard.h"
+#include "BattleCard.h"
 class Witch: public BattleCard{
         int getForce() const override; 
         int getDamage() const override; 
