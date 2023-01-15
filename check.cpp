@@ -8,7 +8,7 @@ void foo(){
 
 int main() {
   try{
-    Mtmchkin goodGame("C:\\Users\\alkdv\\CLionProjects\\untitled\\hw4\\badCards.txt");
+    Mtmchkin goodGame("C:\\Users\\alkdv\\CLionProjects\\untitled\\hw4\\cards.txt");
     while (!(goodGame.isGameOver())){
         goodGame.playRound();
         goodGame.printLeaderBoard();
