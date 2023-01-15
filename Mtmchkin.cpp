@@ -74,33 +74,26 @@ bool Mtmchkin::assignJob (std::shared_ptr<Player>& player, std::string jobName, 
     return true;
 }
 
-int spacePosition(std::string& word){
-    int count = 0;
-    for (char letter : word){
-        if (letter == ' '){
-            return count;
-        }
-        count++;
-    }
-    return -1;
-}
 
 void Mtmchkin::readPlayer(std::shared_ptr<Player>& player){
     std::string input;
     std::string playerName;
     std::string jobName;
+    std::string trash;
     bool flag = true;
-    int position;
     while (flag){
         std::getline(std::cin, input);
-        position = spacePosition(input);
-        if (position<=0){
-            std::cout << "maybe here " << position << input << std::endl;
-            printInvalidName();
+        std::istringstream iStream(input);
+        iStream>>playerName;
+        if (iStream.eof()){
             continue;
         }
-        playerName = input.substr(0,position);
-        jobName = input.substr(position+1);
+        iStream>>jobName;
+        iStream>>trash;
+        if (!(iStream.fail())){
+            std::cout << "need to ask what to do" <<std::endl;
+            continue;
+        }
         if(assignJob(player, jobName, playerName)){
             flag = false;
         }

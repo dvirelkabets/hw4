@@ -11,6 +11,7 @@
 #include <stack>
 #include <memory>
 #include <limits>
+#include <sstream>
 #include "Players/Player.h"
 #include "Cards/Card.h"
 #include "Cards/Witch.h"
