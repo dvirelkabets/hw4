@@ -1,0 +1,78 @@
+Welcome to the world of MtmChkin!!!
+Please enter team size: (2-6)
+Please insert the player name and class: 
+You have entered an invalid class. Please try again.
+You have entered an invalid class. Please try again.
+Please insert the player name and class: 
+
+-------------------------------------------
+Start of round 0:
+
+Start of matamDalf's turn: 
+Player matamDalf has been defeated by a Witch.
+Start of rocky's turn: 
+Player rocky has defeated Gremlin and rose 1 Level!
+
+-------------------------------------------
+Start of round 1:
+
+Start of matamDalf's turn: 
+Player matamDalf has defeated Gremlin and rose 1 Level!
+Start of rocky's turn: 
+Player rocky has been defeated by a Dragon.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          rocky           2         5     0     12    Warrior  
+
+-------------------------------------------
+Start of round 2:
+
+Start of matamDalf's turn: 
+Player matamDalf has defeated Gremlin and rose 1 Level!
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          rocky           2         5     0     12    Warrior  
+
+-------------------------------------------
+Start of round 3:
+
+Start of matamDalf's turn: 
+Player matamDalf has been defeated by a Witch.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          rocky           2         5     0     12    Warrior  
+
+-------------------------------------------
+Start of round 4:
+
+Start of matamDalf's turn: 
+Player matamDalf has defeated Gremlin and rose 1 Level!
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          rocky           2         5     0     12    Warrior  
+
+-------------------------------------------
+Start of round 5:
+
+Start of matamDalf's turn: 
+Player matamDalf has defeated Gremlin and rose 1 Level!
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          rocky           2         5     0     12    Warrior  
+
+-------------------------------------------
+Start of round 6:
+
+Start of matamDalf's turn: 
+Player matamDalf has been defeated by a Dragon.
+The Game has ended!!!
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       5         5     0     18    Healer  
+2          rocky           2         5     0     12    Warrior  
