@@ -2,21 +2,17 @@
 #include "../Exception.h"
 #include "../Mtmchkin.h"
 
-void foo(){
-  throw DeckFileFormatError(2);
-}
-
 int main() {
+  const int MAX_NUMBER_OF_ROUNDS = 100;
   try{
-    Mtmchkin goodGame("cards.txt");
-    while (!(goodGame.isGameOver())){
+    Mtmchkin goodGame("deck.txt");
+    while (!goodGame.isGameOver() && goodGame.getNumberOfRounds()<MAX_NUMBER_OF_ROUNDS){
         goodGame.playRound();
-        goodGame.printLeaderBoard();
     }
+    goodGame.printLeaderBoard();
   }
   catch(const std::exception& e){
     std::cout <<e.what()<< std::endl;
   }
-
     return 0;
 }
