@@ -4,7 +4,7 @@ Please insert the player name and class:
 Please insert the player name and class: 
 
 -------------------------------------------
-Start of round 0:
+Start of round 1:
 
 Start of Jimmy's turn: 
 Player Jimmy has been defeated by a Dragon.

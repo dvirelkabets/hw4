@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Exception.h"
-#include "Mtmchkin.h"
+#include "../Exception.h"
+#include "../Mtmchkin.h"
 
 void foo(){
   throw DeckFileFormatError(2);

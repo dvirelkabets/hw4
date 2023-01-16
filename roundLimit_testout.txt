@@ -4,20 +4,17 @@ Please insert the player name and class:
 Please insert the player name and class: 
 
 -------------------------------------------
-Start of round 0:
-
-Start of matamDalf's turn: 
-Healers know how to use mana, you've gained 10 health points.
-Start of rocky's turn: 
-Nothing happened.
-
--------------------------------------------
 Start of round 1:
 
 Start of matamDalf's turn: 
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 2:
@@ -27,6 +24,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 3:
 
@@ -34,6 +36,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 4:
@@ -43,6 +50,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 5:
 
@@ -50,6 +62,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 6:
@@ -59,6 +76,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 7:
 
@@ -66,6 +88,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 8:
@@ -75,6 +102,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 9:
 
@@ -82,6 +114,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 10:
@@ -91,6 +128,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 11:
 
@@ -98,6 +140,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 12:
@@ -107,6 +154,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 13:
 
@@ -114,6 +166,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 14:
@@ -123,6 +180,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 15:
 
@@ -130,6 +192,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 16:
@@ -139,6 +206,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 17:
 
@@ -146,6 +218,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 18:
@@ -155,6 +232,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 19:
 
@@ -162,6 +244,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 20:
@@ -171,6 +258,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 21:
 
@@ -178,6 +270,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 22:
@@ -187,6 +284,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 23:
 
@@ -194,6 +296,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 24:
@@ -203,6 +310,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 25:
 
@@ -210,6 +322,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 26:
@@ -219,6 +336,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 27:
 
@@ -226,6 +348,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 28:
@@ -235,6 +362,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 29:
 
@@ -242,6 +374,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 30:
@@ -251,6 +388,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 31:
 
@@ -258,6 +400,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 32:
@@ -267,6 +414,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 33:
 
@@ -274,6 +426,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 34:
@@ -283,6 +440,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 35:
 
@@ -290,6 +452,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 36:
@@ -299,6 +466,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 37:
 
@@ -306,6 +478,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 38:
@@ -315,6 +492,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 39:
 
@@ -322,6 +504,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 40:
@@ -331,6 +518,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 41:
 
@@ -338,6 +530,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 42:
@@ -347,6 +544,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 43:
 
@@ -354,6 +556,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 44:
@@ -363,6 +570,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 45:
 
@@ -370,6 +582,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 46:
@@ -379,6 +596,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 47:
 
@@ -386,6 +608,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 48:
@@ -395,6 +622,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 49:
 
@@ -402,6 +634,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 50:
@@ -411,6 +648,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 51:
 
@@ -418,6 +660,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 52:
@@ -427,6 +674,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 53:
 
@@ -434,6 +686,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 54:
@@ -443,6 +700,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 55:
 
@@ -450,6 +712,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 56:
@@ -459,6 +726,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 57:
 
@@ -466,6 +738,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 58:
@@ -475,6 +752,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 59:
 
@@ -482,6 +764,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 60:
@@ -491,6 +778,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 61:
 
@@ -498,6 +790,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 62:
@@ -507,6 +804,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 63:
 
@@ -514,6 +816,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 64:
@@ -523,6 +830,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 65:
 
@@ -530,6 +842,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 66:
@@ -539,6 +856,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 67:
 
@@ -546,6 +868,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 68:
@@ -555,6 +882,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 69:
 
@@ -562,6 +894,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 70:
@@ -571,6 +908,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 71:
 
@@ -578,6 +920,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 72:
@@ -587,6 +934,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 73:
 
@@ -594,6 +946,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 74:
@@ -603,6 +960,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 75:
 
@@ -610,6 +972,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 76:
@@ -619,6 +986,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 77:
 
@@ -626,6 +998,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 78:
@@ -635,6 +1012,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 79:
 
@@ -642,6 +1024,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 80:
@@ -651,6 +1038,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 81:
 
@@ -658,6 +1050,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 82:
@@ -667,6 +1064,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 83:
 
@@ -674,6 +1076,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 84:
@@ -683,6 +1090,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 85:
 
@@ -690,6 +1102,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 86:
@@ -699,6 +1116,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 87:
 
@@ -706,6 +1128,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 88:
@@ -715,6 +1142,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 89:
 
@@ -722,6 +1154,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 90:
@@ -731,6 +1168,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 91:
 
@@ -738,6 +1180,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 92:
@@ -747,6 +1194,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 93:
 
@@ -754,6 +1206,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 94:
@@ -763,6 +1220,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 95:
 
@@ -770,6 +1232,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 96:
@@ -779,6 +1246,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 97:
 
@@ -786,6 +1258,11 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
 
 -------------------------------------------
 Start of round 98:
@@ -795,6 +1272,11 @@ Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
 -------------------------------------------
 Start of round 99:
 
@@ -802,3 +1284,21 @@ Start of matamDalf's turn:
 Healers know how to use mana, you've gained 10 health points.
 Start of rocky's turn: 
 Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  
+
+-------------------------------------------
+Start of round 100:
+
+Start of matamDalf's turn: 
+Healers know how to use mana, you've gained 10 health points.
+Start of rocky's turn: 
+Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          matamDalf       1         5     100   10    Healer  
+2          rocky           1         5     100   10    Warrior  

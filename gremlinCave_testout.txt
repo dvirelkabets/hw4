@@ -4,20 +4,17 @@ Please insert the player name and class:
 Please insert the player name and class: 
 
 -------------------------------------------
-Start of round 0:
-
-Start of Itay's turn: 
-Player Itay has defeated Gremlin and rose 1 Level!
-Start of Pikachu's turn: 
-Player Pikachu has defeated Gremlin and rose 1 Level!
-
--------------------------------------------
 Start of round 1:
 
 Start of Itay's turn: 
 Player Itay has defeated Gremlin and rose 1 Level!
 Start of Pikachu's turn: 
 Player Pikachu has defeated Gremlin and rose 1 Level!
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            2         5     100   12    Healer  
+2          Pikachu         2         5     100   14    Ninja  
 
 -------------------------------------------
 Start of round 2:
@@ -27,6 +24,11 @@ Player Itay has defeated Gremlin and rose 1 Level!
 Start of Pikachu's turn: 
 Player Pikachu has defeated Gremlin and rose 1 Level!
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            3         5     100   14    Healer  
+2          Pikachu         3         5     100   18    Ninja  
+
 -------------------------------------------
 Start of round 3:
 
@@ -34,6 +36,11 @@ Start of Itay's turn:
 Player Itay has defeated Gremlin and rose 1 Level!
 Start of Pikachu's turn: 
 Player Pikachu has defeated Gremlin and rose 1 Level!
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            4         5     100   16    Healer  
+2          Pikachu         4         5     100   22    Ninja  
 
 -------------------------------------------
 Start of round 4:
@@ -43,6 +50,11 @@ Player Itay has defeated Gremlin and rose 1 Level!
 Start of Pikachu's turn: 
 Player Pikachu has defeated Gremlin and rose 1 Level!
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            5         5     100   18    Healer  
+2          Pikachu         5         5     100   26    Ninja  
+
 -------------------------------------------
 Start of round 5:
 
@@ -50,6 +62,11 @@ Start of Itay's turn:
 Player Itay has defeated Gremlin and rose 1 Level!
 Start of Pikachu's turn: 
 Player Pikachu has defeated Gremlin and rose 1 Level!
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            6         5     100   20    Healer  
+2          Pikachu         6         5     100   30    Ninja  
 
 -------------------------------------------
 Start of round 6:
@@ -59,6 +76,11 @@ Player Itay has defeated Gremlin and rose 1 Level!
 Start of Pikachu's turn: 
 Player Pikachu has defeated Gremlin and rose 1 Level!
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            7         5     100   22    Healer  
+2          Pikachu         7         5     100   34    Ninja  
+
 -------------------------------------------
 Start of round 7:
 
@@ -67,8 +89,26 @@ Player Itay has defeated Gremlin and rose 1 Level!
 Start of Pikachu's turn: 
 Player Pikachu has defeated Gremlin and rose 1 Level!
 
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            8         5     100   24    Healer  
+2          Pikachu         8         5     100   38    Ninja  
+
 -------------------------------------------
 Start of round 8:
+
+Start of Itay's turn: 
+Player Itay has defeated Gremlin and rose 1 Level!
+Start of Pikachu's turn: 
+Player Pikachu has defeated Gremlin and rose 1 Level!
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            9         5     100   26    Healer  
+2          Pikachu         9         5     100   42    Ninja  
+
+-------------------------------------------
+Start of round 9:
 
 Start of Itay's turn: 
 Player Itay has defeated Gremlin and rose 1 Level!

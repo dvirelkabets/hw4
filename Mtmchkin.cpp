@@ -91,7 +91,7 @@ void Mtmchkin::readPlayer(std::shared_ptr<Player>& player){
         iStream>>jobName;
         iStream>>trash;
         if (!(iStream.fail())){
-            std::cout << "need to ask what to do" <<std::endl;
+            printInvalidName();
             continue;
         }
         if(assignJob(player, jobName, playerName)){
@@ -126,7 +126,7 @@ Mtmchkin::Mtmchkin (const std::string &fileName){
         readPlayer(player);
         m_players.push_back(player);
     }
-    m_index=m_cards.size();
+    m_index=m_cards.size()-1;
 }
 
 void Mtmchkin::playRound(){
@@ -183,5 +183,5 @@ bool Mtmchkin::isGameOver() const{
 }
 
  int Mtmchkin::getNumberOfRounds() const{
-    return m_roundCounter;
+    return m_roundCounter-1;
  }
