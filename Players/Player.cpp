@@ -30,11 +30,11 @@ int Player::getLevel() const{
     return m_level;
 }
 
-void Player::buff(int forceToAdd){
-    if (forceToAdd<0){
-        return;
+void Player::changeForce(int forceChange){
+    m_force += forceChange;
+    if(m_force < 0){
+        m_force = 0;
     }
-    m_force += forceToAdd;
 }
 
 void Player::heal(int addHp){

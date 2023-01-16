@@ -56,7 +56,7 @@ class Mtmchkin{
     std::vector<std::shared_ptr<Player>> m_winnerVector;
     std::vector<std::shared_ptr<Player>> m_loserVector;
     int m_index;
-    int m_roundCounter = 0;
+    int m_roundCounter = 1;
 
     /*
     read file to deck function - recive file name and try to create new card deck according to the rules set

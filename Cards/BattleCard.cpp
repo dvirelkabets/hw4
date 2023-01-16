@@ -1,6 +1,7 @@
 #include "BattleCard.h"
 #include"../utilities.h"
 #include "Dragon.h"
+#include "Witch.h"
 
 BattleCard::BattleCard(std::string name): Card(name){}
 
@@ -13,6 +14,11 @@ void BattleCard::applyEncounter(Player& player) const{
     else{
         player.damage(this->getDamage());
         printLossBattle(player.getName(), this->m_name);
+        const Witch* witchPtr = dynamic_cast<const Witch*>(this);
+        if(!(witchPtr == nullptr)){
+            player.changeForce(-1);
+        } 
+
     }
 }
 

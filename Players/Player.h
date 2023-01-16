@@ -36,6 +36,7 @@ public:
    */
   void levelUp();
 
+
   /*
   *@return - The amount of coins the player have
   */
@@ -47,11 +48,12 @@ public:
  int getLevel() const;
 
  /*
- *Increase the power in the amount given
- *@parm forceToAdd - The amount of force we increase force with
+ *Changes the power in the amount given
+ *If we get negative force after the change we set the force to 0
+ *@parm forceChange - The amount of force we change the force by
  @return void
  */
-void buff(int forceToAdd);
+void changeForce(int forceChange);
 
 /*
 *Increase HP with the amount given 

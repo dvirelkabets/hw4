@@ -130,19 +130,25 @@ Mtmchkin::Mtmchkin (const std::string &fileName){
 }
 
 void Mtmchkin::playRound(){
+    typedef std::vector<std::shared_ptr<Player>>::iterator iterator;
     printRoundStartMessage(m_roundCounter);
+    std::vector<iterator> needtoRemove;
+    iterator index=m_players.begin();
     for (std::shared_ptr<Player> player : m_players) {
-        if (player->isKnockedOut() || player->getLevel() == 10) {
-            continue;
-        }
         printTurnStartMessage(player->getName());
         playNextCard(player);
         if (player->getLevel() == 10){
             m_winnerVector.push_back(player);
+            needtoRemove.push_back(index);
         }
         if (player->isKnockedOut()){
             m_loserVector.push_back(player);
+            needtoRemove.push_back(index);
         }
+        index++;
+    }
+    for(iterator position: needtoRemove){
+        m_players.erase(position);
     }
     m_roundCounter++;
     if (isGameOver()){
@@ -151,26 +157,26 @@ void Mtmchkin::playRound(){
 }
 
 void Mtmchkin::printLeaderBoard() const{
-    if (m_winnerVector.empty() && m_loserVector.empty()){
-        return;
-    }
-    std::vector<std::shared_ptr<Player>> leaderBoard;
     printLeaderBoardStartMessage();
-    for (std::shared_ptr<Player> player : m_winnerVector){
-        leaderBoard.push_back(player);
-    }
-    for (std::vector<std::shared_ptr<Player>>::const_reverse_iterator it = m_loserVector.crbegin(); it != m_loserVector.crend(); ++it){
-        leaderBoard.push_back(*it);
-    }
     int i = 1;
-    for (std::shared_ptr<Player> player : leaderBoard){
+    for (std::shared_ptr<Player> player : m_winnerVector){
         printPlayerLeaderBoard(i, *player);
+        i++;
+    }
+
+    for (std::shared_ptr<Player> player : m_players){
+        printPlayerLeaderBoard(i, *player);
+        i++;
+    }
+    
+    for (std::vector<std::shared_ptr<Player>>::const_reverse_iterator it = m_loserVector.crbegin(); it != m_loserVector.crend(); ++it){
+        printPlayerLeaderBoard(i, *(*it));
         i++;
     }
 }
 
 bool Mtmchkin::isGameOver() const{
-    if (m_players.size() == m_loserVector.size() + m_winnerVector.size()){
+    if (m_players.empty()){
         return true;
     }
     return false;
