@@ -64,7 +64,7 @@ void Merchant::applyEncounter(Player& player) const{
     case INPUT_TO_BUY_FORCE:
     {
       if(player.pay(PRICE_FOR_FORCE)){
-        player.heal(AMOUNT_OF_FORCE_PLAYER_GETS);
+        player.changeForce(AMOUNT_OF_FORCE_PLAYER_GETS);
         printMerchantSummary(std::cout, player.getName(), INPUT_TO_BUY_FORCE, PRICE_FOR_FORCE);
       }
       else{
