@@ -130,9 +130,10 @@ Mtmchkin::Mtmchkin (const std::string &fileName){
 }
 
 void Mtmchkin::playRound(){
+    typedef std::vector<std::shared_ptr<Player>>::iterator iterator;
     printRoundStartMessage(m_roundCounter);
-    std::vector<std::vector<std::shared_ptr<Player>>::iterator> needtoRemove;
-    std::vector<std::shared_ptr<Player>>::iterator index=m_players.begin();
+    std::vector<iterator> needtoRemove;
+    iterator index=m_players.begin();
     for (std::shared_ptr<Player> player : m_players) {
         printTurnStartMessage(player->getName());
         playNextCard(player);
@@ -146,7 +147,7 @@ void Mtmchkin::playRound(){
         }
         index++;
     }
-    for(std::vector<std::shared_ptr<Player>>::iterator position: needtoRemove){
+    for(iterator position: needtoRemove){
         m_players.erase(position);
     }
     m_roundCounter++;

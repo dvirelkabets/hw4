@@ -56,7 +56,8 @@ void Merchant::applyEncounter(Player& player) const{
           printMerchantSummary(std::cout, player.getName(), INPUT_TO_BUY_LIFE, PRICE_FOR__LIFE);
         }
         else{
-          printMerchantInsufficientCoins(std::cout);//need to add somthing
+          printMerchantInsufficientCoins(std::cout);
+          printMerchantSummary(std::cout, player.getName(), INPUT_TO_BUY_LIFE, 0);
         }
       }
       break;
@@ -68,6 +69,7 @@ void Merchant::applyEncounter(Player& player) const{
       }
       else{
         printMerchantInsufficientCoins(std::cout);
+        printMerchantSummary(std::cout, player.getName(), INPUT_TO_BUY_FORCE, 0);
       }
     }
     break;
