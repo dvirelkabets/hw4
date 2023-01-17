@@ -51,7 +51,7 @@ int Mtmchkin::readPlayerNumber() const{
 
 bool Mtmchkin::isValidPlayerName (std::string player){
     try{
-        Ninja tmpPlayer(player);
+        Rogue tmpPlayer(player);
         return true;
     }
     catch(...){
@@ -130,10 +130,10 @@ Mtmchkin::Mtmchkin (const std::string &fileName){
 }
 
 void Mtmchkin::playRound(){
-    typedef std::vector<std::shared_ptr<Player>>::iterator iterator;
+    typedef std::vector<std::shared_ptr<Player>>::iterator playerIterator;
     printRoundStartMessage(m_roundCounter);
-    std::vector<iterator> needtoRemove;
-    iterator index=m_players.begin();
+    std::vector<playerIterator> needtoRemove;
+    playerIterator index=m_players.begin();
     for (std::shared_ptr<Player> player : m_players) {
         printTurnStartMessage(player->getName());
         playNextCard(player);
@@ -147,8 +147,8 @@ void Mtmchkin::playRound(){
         }
         index++;
     }
-    for(iterator position: needtoRemove){
-        m_players.erase(position);
+    for (std::vector<playerIterator>::reverse_iterator it = needtoRemove.rbegin(); it!=needtoRemove.rend();++it){
+        m_players.erase(*it);
     }
     m_roundCounter++;
     if (isGameOver()){
