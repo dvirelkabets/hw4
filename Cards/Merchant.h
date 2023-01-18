@@ -29,6 +29,12 @@ class Merchant: public Card{
     //private exceptions 
     class InvalidInput{};
 
+    //private function to buy life at encounter
+    void buyLife(Player& player) const;
+
+    //private function to buy force at encounter
+    void buyForce(Player& player) const;
+
 
 
     public: 
@@ -44,6 +50,6 @@ class Merchant: public Card{
         Merchant& operator=(const Merchant& other) = default;
 };
 
-static std::shared_ptr<Merchant> MERCHENT_CARD = std::make_shared<Merchant>();
+static std::shared_ptr<Merchant> MERCHANT_CARD = std::make_shared<Merchant>();
 
 #endif // EX4_Merchant_H

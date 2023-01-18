@@ -42,40 +42,48 @@ int Merchant::getValidInput() const{
     }
 }
 
+
+void Merchant::buyLife(Player& player) const{
+  if(player.pay(PRICE_FOR__LIFE)){
+      player.heal(AMOUNT_OF_LIFE_PLAYER_GETS);
+      printMerchantSummary(std::cout, player.getName(), INPUT_TO_BUY_LIFE, PRICE_FOR__LIFE);
+    }
+  else{
+      printMerchantInsufficientCoins(std::cout);
+      printMerchantSummary(std::cout, player.getName(), INPUT_TO_BUY_LIFE, 0);
+    }
+}
+
+
+void Merchant::buyForce(Player& player) const{
+  if(player.pay(PRICE_FOR_FORCE)){
+    player.changeForce(AMOUNT_OF_FORCE_PLAYER_GETS);
+    printMerchantSummary(std::cout, player.getName(), INPUT_TO_BUY_FORCE, PRICE_FOR_FORCE);
+  }
+  else{
+    printMerchantInsufficientCoins(std::cout);
+    printMerchantSummary(std::cout, player.getName(), INPUT_TO_BUY_FORCE, 0);
+  }
+}
+
+
 void Merchant::applyEncounter(Player& player) const{
     printMerchantInitialMessageForInteractiveEncounter(std::cout, player.getName(), player.getCoins());
     int PlayerInput = getValidInput();
     switch (PlayerInput)
     {
     case INPUT_TO_DO_NOTHING:
+      printMerchantSummary(std::cout, player.getName(), INPUT_TO_DO_NOTHING, 0);
       break;
     case INPUT_TO_BUY_LIFE:
-      {
-        if(player.pay(PRICE_FOR__LIFE)){
-          player.heal(AMOUNT_OF_LIFE_PLAYER_GETS);
-          printMerchantSummary(std::cout, player.getName(), INPUT_TO_BUY_LIFE, PRICE_FOR__LIFE);
-        }
-        else{
-          printMerchantInsufficientCoins(std::cout);
-          printMerchantSummary(std::cout, player.getName(), INPUT_TO_BUY_LIFE, 0);
-        }
-      }
+       buyLife(player);
       break;
     case INPUT_TO_BUY_FORCE:
-    {
-      if(player.pay(PRICE_FOR_FORCE)){
-        player.changeForce(AMOUNT_OF_FORCE_PLAYER_GETS);
-        printMerchantSummary(std::cout, player.getName(), INPUT_TO_BUY_FORCE, PRICE_FOR_FORCE);
-      }
-      else{
-        printMerchantInsufficientCoins(std::cout);
-        printMerchantSummary(std::cout, player.getName(), INPUT_TO_BUY_FORCE, 0);
-      }
-    }
+      buyForce(player);
     break;
   }
 }
 
 std::shared_ptr<Card> Merchant::getCard(){
-    return MERCHENT_CARD;
+    return MERCHANT_CARD;
 }
