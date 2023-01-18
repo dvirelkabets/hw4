@@ -27,14 +27,9 @@
 #include "Players/Warrior.h"
 #include "Exception.h"
 #include "utilities.h"
-
+    
 typedef std::shared_ptr<Card> (*getCard)();
-static std::map<std::string, getCard> m_cardMap = {{"Well", &Well::getCard},{"Gremlin", &Gremlin::getCard},{"Witch", &Witch::getCard},
-                                                   {"Dragon",&Dragon::getCard},{"Merchant", &Merchant::getCard},{"Treasure",&Treasure::getCard},
-                                                   {"Barfight",&Barfight::getCard},{"Mana",&Mana::getCard}};
-
 typedef std::shared_ptr<Player> (*getPlayer)(const std::string name);
-static std::map<std::string, getPlayer> m_playerMap = {{"Ninja", &Ninja::getPlayer}, {"Warrior", &Warrior::getPlayer}, {"Healer",&Healer::getPlayer}};
 
 /*
 Mtmchkin class:
@@ -49,8 +44,10 @@ Mtmchkin class:
  not have dangling reference).
 */
 
-class Mtmchkin{
 
+class Mtmchkin{
+    static std::map<std::string, getCard> m_cardMap;
+    static std::map<std::string, getPlayer> m_playerMap;
     std::vector<std::shared_ptr<Player>> m_players;
     std::vector<std::shared_ptr<Card>> m_cards;
     std::vector<std::shared_ptr<Player>> m_winnerVector;

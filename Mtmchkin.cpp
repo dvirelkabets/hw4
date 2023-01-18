@@ -1,4 +1,16 @@
 #include "Mtmchkin.h"
+/*
+here defining the maps that are static members of the class,
+the maps only created once since they are static and will be destroyed when the program is finished.
+that way the maps are NOT global varibles :)
+*/
+
+std::map<std::string, getCard> Mtmchkin::m_cardMap = {{"Well", &Well::getCard},{"Gremlin", &Gremlin::getCard},{"Witch", &Witch::getCard},
+                {"Dragon",&Dragon::getCard},{"Merchant", &Merchant::getCard},{"Treasure",&Treasure::getCard},
+                {"Barfight",&Barfight::getCard},{"Mana",&Mana::getCard}};
+    
+std::map<std::string, getPlayer> Mtmchkin::m_playerMap = {{"Ninja", &Ninja::getPlayer}, {"Warrior", &Warrior::getPlayer}, {"Healer",&Healer::getPlayer}};
+
 
 void Mtmchkin::readFileToDeck (const std::string &fileName){
     std::ifstream file (fileName);
@@ -9,14 +21,14 @@ void Mtmchkin::readFileToDeck (const std::string &fileName){
     int fileLine = 1;
     while (std::getline(file,read)){
         if (m_cardMap.count(read)){
-            m_cards.push_back(m_cardMap[read]());
+            m_cards.push_back(m_cardMap.at(read)());
         }
         else{
             throw DeckFileFormatError(fileLine);
         }
         fileLine++;
     }
-    if (fileLine<=4){
+    if (fileLine<=5){
         throw DeckFileInvalidSize();
     }
 }
@@ -34,7 +46,6 @@ bool isDigit(std::string& word){
 int Mtmchkin::readPlayerNumber() const{
     std::string numberInput;
     int playersNum;
-    printStartGameMessage();
     while(true){
         printEnterTeamSizeMessage();
         std::cin >> numberInput;
@@ -51,7 +62,7 @@ int Mtmchkin::readPlayerNumber() const{
 
 bool Mtmchkin::isValidPlayerName (std::string player){
     try{
-        Rogue tmpPlayer(player);
+        Ninja tmpPlayer(player);
         return true;
     }
     catch(...){
@@ -65,7 +76,7 @@ bool Mtmchkin::assignJob (std::shared_ptr<Player>& player, std::string jobName, 
         return false;
     }
     if (m_playerMap.count(jobName)){
-        player = m_playerMap[jobName](playerName);
+        player = m_playerMap.at(jobName)(playerName);
     }
     else{
         printInvalidClass();
@@ -113,7 +124,9 @@ after that read the players number
 for every player read the name and class and making sure everything is legal.
 set index to the size of the vector of cards - using it as cyclic group.
 */
+
 Mtmchkin::Mtmchkin (const std::string &fileName){
+    printStartGameMessage();
     // ---------------reading from file -------------------------
     readFileToDeck(fileName);
     //-----------------reading players num-----------------------
@@ -130,10 +143,10 @@ Mtmchkin::Mtmchkin (const std::string &fileName){
 }
 
 void Mtmchkin::playRound(){
-    typedef std::vector<std::shared_ptr<Player>>::iterator playerIterator;
+    typedef std::vector<std::shared_ptr<Player>>::iterator iterator;
     printRoundStartMessage(m_roundCounter);
-    std::vector<playerIterator> needtoRemove;
-    playerIterator index=m_players.begin();
+    std::vector<iterator> needtoRemove;
+    iterator index=m_players.begin();
     for (std::shared_ptr<Player> player : m_players) {
         printTurnStartMessage(player->getName());
         playNextCard(player);
@@ -147,7 +160,7 @@ void Mtmchkin::playRound(){
         }
         index++;
     }
-    for (std::vector<playerIterator>::reverse_iterator it = needtoRemove.rbegin(); it!=needtoRemove.rend();++it){
+    for (std::vector<iterator>::reverse_iterator it = needtoRemove.rbegin(); it!=needtoRemove.rend();++it){
         m_players.erase(*it);
     }
     m_roundCounter++;
